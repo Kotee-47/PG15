@@ -7,6 +7,7 @@ def main():
     print('ия меняю ее кажды день')
     print('опять')
     print('хххззщщыв')
+    print('новый принт (ода)')
     my_superfunction()
 
 
