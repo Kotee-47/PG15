@@ -16,8 +16,8 @@ a = input()
 if ' ' in a:
     if len(a.split(' ')) == 2:
         if a.split(' ')[0].isdigit() and a.split(' ')[1].isdigit():
-            if a.split(' ')[0] % a.split(' ')[1]
-            w, h = a.split(' ')
+            if a.split(' ')[0] % a.split(' ')[1]:
+                w, h = a.split(' ')
         else:
             print('Неправильный формат ввода')
             lnchh = False
