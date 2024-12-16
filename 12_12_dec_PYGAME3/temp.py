@@ -39,10 +39,6 @@ class Board:
         print("Была выбрана ячейка " + str(cell))
         if cell:
             x, y = cell
-            for i in range(self.height):
-                self.board[i][x] = int(not self.board[i][x])
-            for i in range(self.width):
-                self.board[y][i] = int(not self.board[y][i])
             self.board[y][x] = int(not self.board[y][x])
             self.render(self.screen)
 

@@ -19,7 +19,7 @@ class Board:
         self.screen = screen
         for x in range(self.width):
             for y in range(self.height):
-                pygame.draw.rect(screen, pygame.Color('dark blue'), (
+                pygame.draw.rect(screen, pygame.Color('dark green'), (
                                  x * self.cell_size + self.left,
                                  y * self.cell_size + self.top,
                                  self.cell_size, self.cell_size),
@@ -62,7 +62,7 @@ def main():
             if event.type == pygame.MOUSEBUTTONUP:
                 board.get_click(event.pos)
 
-        screen.fill("dark grey")
+        screen.fill("black")
         board.render(screen)
         board.set_view(20, 20, 10)
         pygame.display.flip()
